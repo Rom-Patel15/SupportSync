@@ -1,5 +1,4 @@
 # SupportSync
-<<<<<<< HEAD
 
 A full-stack helpdesk ticketing system for customers and support administrators.
 
