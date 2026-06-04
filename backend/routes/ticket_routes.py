@@ -24,7 +24,7 @@ from schemas import (
     CommentCreate
 )
 
-BACKEND_URL = "http://127.0.0.1:8000"
+BACKEND_URL = "https://supportsync-production.up.railway.app"
 
 router = APIRouter(
     prefix="/tickets",

@@ -145,7 +145,7 @@ Start the backend first, then start the frontend. Use the seeded admin account f
 | MAX_FILE_SIZE_MB | Maximum upload size in megabytes. | 10 | Yes |
 | ADMIN_EMAIL | Seed admin email for local setup. | admin@example.com | No |
 | ADMIN_PASSWORD | Seed admin password for local setup. | change-this-admin-password | No |
-| VITE_API_BASE_URL | Frontend API base URL. | http://localhost:8000 | Yes |
+| VITE_API_BASE_URL | Frontend API base URL. | https://supportsync-production.up.railway.app | Yes |
 
 ## API Overview
 
