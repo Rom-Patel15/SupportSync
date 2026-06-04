@@ -1,4 +1,5 @@
 # SupportSync
+<<<<<<< HEAD
 
 A full-stack helpdesk ticketing system for customers and support administrators.
 
@@ -227,3 +228,6 @@ dist
 ## License
 
 MIT
+=======
+Support ticket management system featuring role-based access, dashboard analytics, and attachment support.
+>>>>>>> 6d62d9394d935fc17fd1726b36904e0d5201f931
