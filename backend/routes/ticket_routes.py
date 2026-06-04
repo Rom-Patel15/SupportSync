@@ -32,9 +32,6 @@ router = APIRouter(
 )
 
 
-# ------------------------
-# Current User Profile
-# ------------------------
 
 @router.get("/me")
 def get_my_profile(
@@ -48,9 +45,6 @@ def get_my_profile(
     }
 
 
-# ------------------------
-# Create Ticket
-# ------------------------
 
 @router.post("/")
 def create_ticket(
@@ -114,9 +108,6 @@ def create_ticket(
         "attachment_path": attachment_path
     }
 
-# ------------------------
-# List + Search + Filter
-# ------------------------
 
 @router.get("/")
 def get_tickets(
@@ -164,9 +155,6 @@ def get_tickets(
         for ticket in tickets
     ]
 
-# ------------------------
-# Edit Ticket
-# ------------------------
 
 @router.put("/{ticket_id}")
 def update_ticket(
@@ -213,9 +201,6 @@ def update_ticket(
     }
 
 
-# ------------------------
-# Update Ticket Status
-# ------------------------
 
 @router.put("/{ticket_id}/status")
 def update_ticket_status(
@@ -267,9 +252,6 @@ def update_ticket_status(
     }
 
 
-# ------------------------
-# Add Comment
-# ------------------------
 
 @router.post("/{ticket_id}/comments")
 def add_comment(
@@ -315,9 +297,6 @@ def add_comment(
     }
 
 
-# ------------------------
-# Get Comments
-# ------------------------
 
 @router.get("/{ticket_id}/comments")
 def get_comments(
@@ -377,9 +356,6 @@ def get_comments(
     return result
 
 
-# ------------------------
-# View Ticket Details
-# ------------------------
 
 @router.get("/{ticket_id}")
 def get_ticket_details(
@@ -427,9 +403,6 @@ def get_ticket_details(
     "updated_at": ticket.updated_at
 }
 
-# ------------------------
-# Delete Ticket
-# ------------------------
 
 @router.delete("/{ticket_id}")
 def delete_ticket(

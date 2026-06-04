@@ -52,7 +52,6 @@ def signup(
     }
 
 
-# JSON login (keep for React frontend later)
 @router.post("/login")
 def login(
     user: UserLogin,
@@ -95,7 +94,6 @@ def login(
     }
 
 
-# Swagger OAuth login
 @router.post("/token")
 def login_for_swagger(
     form_data: OAuth2PasswordRequestForm = Depends(),

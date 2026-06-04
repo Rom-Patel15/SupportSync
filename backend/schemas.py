@@ -2,10 +2,6 @@ from pydantic import BaseModel, EmailStr
 from datetime import datetime
 
 
-# -------------------------
-# USER SCHEMAS
-# -------------------------
-
 class UserCreate(BaseModel):
     name: str
     email: EmailStr
@@ -27,9 +23,6 @@ class UserResponse(BaseModel):
         from_attributes = True
 
 
-# -------------------------
-# TICKET SCHEMAS
-# -------------------------
 
 class TicketCreate(BaseModel):
     subject: str
@@ -54,9 +47,6 @@ class TicketResponse(BaseModel):
         from_attributes = True
 
 
-# -------------------------
-# COMMENT SCHEMAS
-# -------------------------
 
 class CommentCreate(BaseModel):
     message: str

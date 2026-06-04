@@ -29,9 +29,6 @@ oauth2_scheme = OAuth2PasswordBearer(
 )
 
 
-# --------------------
-# Password Functions
-# --------------------
 
 def hash_password(password: str):
     return pwd_context.hash(password)
@@ -47,9 +44,6 @@ def verify_password(
     )
 
 
-# --------------------
-# JWT Creation
-# --------------------
 
 def create_access_token(data: dict):
 
@@ -68,9 +62,6 @@ def create_access_token(data: dict):
     )
 
 
-# --------------------
-# Current User
-# --------------------
 
 def get_current_user(
     token: str = Depends(oauth2_scheme),

@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -24,9 +25,9 @@ app = FastAPI(
     title="SupportSync API"
 )
 
-# -------------------------
-# Static Files
-# -------------------------
+os.makedirs("uploads", exist_ok=True)
+os.makedirs("uploads/tickets", exist_ok=True)
+os.makedirs("uploads/comments", exist_ok=True)
 
 app.mount(
     "/uploads",
@@ -34,9 +35,6 @@ app.mount(
     name="uploads"
 )
 
-# -------------------------
-# CORS
-# -------------------------
 
 app.add_middleware(
     CORSMiddleware,
