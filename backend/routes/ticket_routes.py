@@ -56,9 +56,9 @@ def create_ticket(
     current_user=Depends(get_current_user)
 ):
 
-    total_tickets = db.query(Ticket).count()
-
-    generated_ticket_id = f"TKT-{total_tickets + 1:03d}"
+    generated_ticket_id = (
+    f"TKT-{uuid.uuid4().hex[:8].upper()}"
+)
 
     attachment_path = None
 
